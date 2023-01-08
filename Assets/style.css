@@ -1,0 +1,127 @@
+* {
+    font-family:helvetica, sans-serif, arial;
+}
+
+:root {
+    --blue: rgb(26, 120, 228, 0.5);
+    --background: rgb(191, 216, 216);
+    --Font-Color:aliceblue
+}
+
+main {
+    background-color: var(--background);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+header {
+    background-color: var(--background);
+}
+
+header img {
+    max-width: 1000px;
+    min-height: 500px;
+    display: flex;
+}
+
+header nav a {
+    float: right;
+    padding: 5px;
+    margin:0 20px;
+    right: 10%;
+}
+
+ul {
+    background-color: var(--aqua);
+    position:relative;
+    right: 50px;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    position: relative;
+    right: 50px;
+    color: var(--Font-Color);
+}
+
+figure {
+    background-image:url(https://images.wallpaperscraft.com/image/single/beach_ocean_aerial_view_149650_2560x1440.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: static;
+    margin: 0%;
+}
+
+figure img {
+    max-height: 300px;
+    max-width: 300px;
+    position: static;
+    border-radius: 100%;
+    margin: 1% 0 0 2%;
+}
+
+p {
+    max-width: 400px;
+    padding: 10px;
+}
+
+#About-Me {
+    max-width: 20%;
+    position: relative;
+    bottom: 220px;
+    margin:0 0 0 2%;
+    background: rgba(255,255,255,0.0);
+    color: var(--Font-Color)
+
+}
+
+#My-Work {
+    position: relative;
+    bottom:150px;
+}
+
+#My-Work h2 {
+    text-align: center;
+    font-weight:400;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--Font-Color);
+    margin: 1% 0 3% 0;
+}
+
+#My-Work h3 {
+    padding: 1rem;
+}
+
+#My-Work div {
+    float:left;
+    width:33.33%;
+}
+
+#My-Work div img {
+    max-width: 500px;
+    max-height: 500px;
+    position: static;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+
+#Contact-Info {
+    display:inline-block;
+}
+
