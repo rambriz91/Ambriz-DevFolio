@@ -1,7 +1,3 @@
-* {
-    font-family:helvetica, sans-serif, arial;
-}
-
 :root {
     --blue: rgb(26, 120, 228, 0.5);
     --background: rgb(191, 216, 216);
@@ -17,11 +13,25 @@ nav {
     top: 0;
     right: 10px;
     width: 100%;
-    font-size: 20px;
-    font-weight: bolder;
     margin-bottom: 10px;
     background-color: var(--blue);
     padding: 10px;
+}
+
+nav ul {
+    background-color: var(--aqua);
+    position:relative;
+    right: 50px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    position: relative;
+    right: 50px;
+    color: var(--Font-Color);
 }
 
 header {
@@ -29,9 +39,9 @@ header {
 }
 
 header img {
-    max-width: 1000px;
-    min-height: 500px;
-    display: flex;
+    width: 1000px;
+    height: 500px;
+    margin-left: 25%;
 }
 
 header nav a {
@@ -39,28 +49,16 @@ header nav a {
     padding: 5px;
     margin:0 20px;
     right: 10%;
-}
-
-ul {
-    background-color: var(--aqua);
-    position:relative;
-    right: 50px;
-}
-
-li {
-    display: inline;
-}
-
-li a {
-    position: relative;
-    right: 50px;
     color: var(--Font-Color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 figure {
     background-image:url(https://images.wallpaperscraft.com/image/single/beach_ocean_aerial_view_149650_2560x1440.jpg);
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-size: cover;
     background-position: center;
     position: static;
@@ -68,31 +66,40 @@ figure {
 }
 
 figure img {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
+    max-width: 400px;
     position: static;
     border-radius: 100%;
-    margin: 1% 0 0 2%;
-}
-
-p {
-    max-width: 400px;
-    padding: 10px;
+    margin: 3% 0 0 40%;
 }
 
 #About-Me {
-    max-width: 20%;
-    position: relative;
-    bottom: 220px;
-    margin:0 0 0 2%;
+    max-width: 500px;
+    position: static;
+    bottom: 200px;
+    margin:2% 0 4% 40%;
     background: rgba(255,255,255,0.0);
-    color: var(--Font-Color)
+    color: var(--Font-Color);
+}
 
+#About-Me h2 {
+    text-align: left;
+    font-weight:400;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--Font-Color);  
+}
+
+#About-Me p {
+    max-width: 400px;
+    margin-top: 2%;
+    font-size: 20px;
+    color: var(--Font-Color); 
+    font-family: sans-serif; 
 }
 
 #My-Work {
-    position: relative;
-    bottom:150px;
+    position: static;
 }
 
 #My-Work h2 {
@@ -106,6 +113,10 @@ p {
 
 #My-Work h3 {
     padding: 1rem;
+    font-size: 30px;
+    font-family:serif;
+    text-align: center;
+    color: var(--Font-Color)
 }
 
 #My-Work div {
@@ -114,14 +125,143 @@ p {
 }
 
 #My-Work div img {
-    max-width: 500px;
-    max-height: 500px;
-    position: static;
     border-radius: 10%;
+} 
+
+#My-Work div img:hover {
+    border: 10px groove var(--blue);
+    
+}
+
+.first {
+    height: 500px;
+    height: 500px;
+    position: static;
     margin-left: 10%;
 }
 
-#Contact-Info {
-    display:inline-block;
+.second {
+    width: 400px;
+    height: 400px;
+    position: static;
+    margin-left: 20%;
 }
+
+#Contact-Info {
+    position: static;
+    display: grid;
+    padding: 2%;
+    width: 100%;
+    bottom: 100px;
+}
+
+#Contact-Info h2 {
+    padding: 1rem;
+    font-size: 30px;
+    font-family:serif;
+    text-align: center;
+    color: var(--Font-Color)
+}
+
+#Contact-Info ul{
+    list-style: inside;
+    text-align: center;
+}
+
+#Contact-Info ul li{
+    font-size: 20px;
+    color: var(--Font-Color); 
+    font-family: sans-serif;   
+}
+
+footer {
+    Padding: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    #My-Work div {
+        width: 50%;
+        display:grid;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header img {
+        width: 600px;
+        height: 300px;
+        margin-left: 5%;
+    }
+    figure img {
+        max-height: 400px;
+        max-width: 400px;
+        position: static;
+        border-radius: 100%;
+        margin: 3% 0 0 15%;
+    }
+    #About-Me {
+    max-width: 500px;
+    position: static;
+    bottom: 200px;
+    margin:2% 0 4% 15%;
+    background: rgba(255,255,255,0.0);
+    color: var(--Font-Color);
+    }
+
+    .first {
+        height: 350px;
+        height: 350px;
+        position: static;
+        margin-left: 10%;
+    }
+    
+    .second {
+        width: 300px;
+        height: 300px;
+        position: static;
+        margin-left: 20%;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    #My-Work div {
+        width: 100%;
+        display: grid;
+    }
+    header img {
+        width: 400px;
+        height: 200px;
+        margin-left: 5%;
+    }
+    figure img {
+        max-height: 400px;
+        max-width: 400px;
+        position: static;
+        border-radius: 100%;
+        margin: 3% 0 0 10%;
+    }
+    #About-Me {
+        max-width: 500px;
+        position: static;
+        bottom: 200px;
+        margin:2% 0 4% 10%;
+        background: rgba(255,255,255,0.0);
+        color: var(--Font-Color);
+    }
+    .first {
+        height: 500px;
+        height: 500px;
+        position: static;
+        margin-left: 10%;
+    }
+    
+    .second {
+        width: 400px;
+        height: 400px;
+        position: static;
+        margin-left: 20%;
+    }
+}
+
 
