@@ -3,7 +3,7 @@
     --background: rgb(191, 216, 216);
     --Font-Color:aliceblue
 }
-
+/* Tags  */
 main {
     background-color: var(--background);
 }
@@ -30,8 +30,14 @@ nav ul li {
 
 nav ul li a {
     position: relative;
+    float: right;
     right: 50px;
     color: var(--Font-Color);
+    margin:0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
 }
 
 header {
@@ -42,17 +48,6 @@ header img {
     width: 1000px;
     height: 500px;
     margin-left: 25%;
-}
-
-header nav a {
-    float: right;
-    padding: 5px;
-    margin:0 20px;
-    right: 10%;
-    color: var(--Font-Color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
 }
 
 figure {
@@ -72,7 +67,7 @@ figure img {
     border-radius: 100%;
     margin: 3% 0 0 40%;
 }
-
+/* ID's  */
 #About-Me {
     max-width: 500px;
     position: static;
@@ -133,20 +128,6 @@ figure img {
     
 }
 
-.first {
-    height: 500px;
-    height: 500px;
-    position: static;
-    margin-left: 10%;
-}
-
-.second {
-    width: 400px;
-    height: 400px;
-    position: static;
-    margin-left: 20%;
-}
-
 #Contact-Info {
     position: static;
     display: grid;
@@ -179,7 +160,21 @@ footer {
     width: 100%;
     text-align: center;
 }
+/* Classes  */
+.first {
+    height: 500px;
+    height: 500px;
+    position: static;
+    margin-left: 10%;
+}
 
+.second {
+    width: 400px;
+    height: 400px;
+    position: static;
+    margin-left: 20%;
+}
+/* Media Querys  */
 @media screen and (max-width: 992px) {
     #My-Work div {
         width: 50%;
