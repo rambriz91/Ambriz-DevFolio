@@ -17,8 +17,8 @@ This assignment required me to create a developer profile using advanced css and
 ![Alt text](Assets/Profile_Screenshot.png))
 
 ## Links
-Deployed Webpage: https://rambriz91.github.io/Ambriz-Portfolio/
-GitHub Repo Page: https://github.com/rambriz91/Ambriz-Portfolio
+Deployed Webpage: https://rambriz91.github.io/Ambriz-DevFolio/
+GitHub Repo Page: https://github.com/rambriz91/Ambriz-DevFolio
 
 ## Credits
 

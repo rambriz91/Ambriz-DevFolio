@@ -4,6 +4,9 @@
     --Font-Color:aliceblue
 }
 /* Tags  */
+body {
+    width: 100%;
+}
 main {
     background-color: var(--background);
 }
@@ -94,7 +97,7 @@ figure img {
 }
 
 #My-Work {
-    position: static;
+   position: static;
 }
 
 #My-Work h2 {
@@ -103,7 +106,7 @@ figure img {
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--Font-Color);
-    margin: 1% 0 3% 0;
+    margin: 1% 0 3% 0%;
 }
 
 #My-Work h3 {
@@ -256,6 +259,78 @@ footer {
         height: 400px;
         position: static;
         margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: var(--blue);
+        padding: 7px;
+    }
+    
+    nav ul {
+        background-color: var(--aqua);
+        position:relative;
+        left: 45px;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        position: relative;
+        float: right;
+        right: 50px;
+        color: var(--Font-Color);
+        margin:0 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+        padding: 5px;
+        text-align: center;
+    }
+    #My-Work div {
+        width: 100%;
+        display: grid;
+    }
+    header img {
+        width: 350px;
+        height: 175px;
+        margin-left: 5%;
+    }
+    figure img {
+        max-height: 350px;
+        max-width: 350px;
+        position: static;
+        border-radius: 100%;
+        margin: 3% 0 0 5%;
+    }
+    #About-Me {
+        max-width: 500px;
+        position: static;
+        bottom: 200px;
+        margin:2% 0 4% 5%;
+        background: rgba(255,255,255,0.0);
+        color: var(--Font-Color);
+    }
+    .first {
+        height: 300px;
+        height: 300px;
+        position: static;
+        margin-left: 10%;
+    }
+    
+    .second {
+        width: 300px;
+        height: 300px;
+        position: static;
+        margin-left: 10%;
     }
 }
 
