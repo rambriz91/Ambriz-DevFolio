@@ -248,8 +248,8 @@ footer {
         color: var(--Font-Color);
     }
     .first {
-        height: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         position: static;
         margin-left: 10%;
     }
@@ -320,17 +320,17 @@ footer {
         color: var(--Font-Color);
     }
     .first {
-        height: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         position: static;
-        margin-left: 10%;
+        margin-left: 5%;
     }
     
     .second {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         position: static;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 }
 
