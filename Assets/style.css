@@ -165,7 +165,7 @@ footer {
 }
 /* Classes  */
 .first {
-    height: 500px;
+    width: 500px;
     height: 500px;
     position: static;
     margin-left: 10%;
@@ -178,6 +178,51 @@ footer {
     margin-left: 20%;
 }
 /* Media Querys  */
+
+@media screen and (max-width: 1424px) {
+    #My-Work div {
+        width: 33.33%;
+        display:grid;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header img {
+        width: 650px;
+        height: 325px;
+        margin-left: 30%;
+    }
+    figure img {
+        max-height: 450px;
+        max-width: 450px;
+        position: static;
+        border-radius: 100%;
+        margin: 3% 0 0 35%;
+    }
+    #About-Me {
+    max-width: 500px;
+    position: static;
+    bottom: 200px;
+    margin:2% 0 4% 35%;
+    background: rgba(255,255,255,0.0);
+    color: var(--Font-Color);
+    }
+
+    .first {
+        width: 400px;
+        height: 400px;
+        position: static;
+        margin-left: 10%;
+    }
+    
+    .second {
+        width: 350px;
+        height: 350px;
+        position: static;
+        margin-left: 20%;
+    }
+} 
+
 @media screen and (max-width: 992px) {
     #My-Work div {
         width: 50%;
@@ -208,7 +253,7 @@ footer {
     }
 
     .first {
-        height: 350px;
+        width: 350px;
         height: 350px;
         position: static;
         margin-left: 10%;
